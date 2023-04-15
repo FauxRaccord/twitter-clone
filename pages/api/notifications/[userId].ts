@@ -5,7 +5,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
  ) {
-  console.log('hi')
   if (req.method !== 'GET'){
     return res.status(405).end()
   }
